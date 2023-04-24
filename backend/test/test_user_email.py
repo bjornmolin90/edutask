@@ -6,7 +6,7 @@ from src.controllers.usercontroller import UserController
 def test_0_user_valid_email():
     """
     Test-case for not entering an email
-    Should return None since the Database can't return any match
+    Should return None since the Database can't return any match, but the get_user_by_email function in usercontroller.py isn't written correctly
     """
     user = []
     mockedDAO = MagicMock()
